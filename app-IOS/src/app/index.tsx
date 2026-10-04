@@ -1,17 +1,7 @@
-import { Text, View, StyleSheet } from "react-native";
+import Nome from "../index"
 
-export default function Index() {
-  return (
-    <View style={styles.container}>
-      <Text>Olá Mundo !</Text>
-    </View>
-  );
+export default function Pessoa (){
+    return (
+        <Nome/>
+    )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
