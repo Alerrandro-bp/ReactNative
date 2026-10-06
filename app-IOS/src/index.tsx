@@ -1,12 +1,15 @@
 import { View, Text } from "react-native";
 
-export default function Nome(){
+interface Pessoa {
+    nome: string
+    idade: number
+}
+
+export default function Nome(pessoa: Pessoa) {
     return (
         <View>
-            <Text>
-                Olá Mundo !
-            </Text>
-            <button > Clique aqui !</button>
+           <Text>{pessoa.nome}</Text>
+           <Text>{pessoa.idade}</Text>
         </View>
-    )
+    );
 }
